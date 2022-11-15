@@ -598,6 +598,7 @@ header {
     line-height: 4rem; }
 
 .card {
+  display: block;
   position: relative;
   overflow: hidden;
   min-height: 0;
