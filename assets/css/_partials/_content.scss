@@ -14,8 +14,7 @@ main.content {
 		display: grid;
 	}
 
-	section {
-
+	.card {
 		&:nth-of-type(1) {
 			grid-row: 1 / span 2;
 		}
@@ -44,10 +43,7 @@ main.content {
 }
 
 main.content:hover {
-	opacity: 1.0;
-	filter: grayscale(0%);
-
-	> section {
+	> .card {
 		opacity: 0.5;
 		filter: grayscale(100%);
 		transition-property: opacity, filter;

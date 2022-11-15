@@ -5,6 +5,10 @@ body {
 	color: #18191F;
 	padding: 0;
 
+	a {
+		color: #18191F;
+	}
+
 	@include media('desktop') {
 		padding: rem(80) rem(8);
 	}
