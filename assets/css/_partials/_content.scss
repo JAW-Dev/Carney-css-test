@@ -1,0 +1,62 @@
+.content-wrap {
+	max-width: rem(1110);
+	width: 100%;
+	background-color: white;
+}
+
+main.content {
+	display: block;
+	gap: rem(30);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, rem(300));
+
+	@include media('desktop') {
+		display: grid;
+	}
+
+	section {
+
+		&:nth-of-type(1) {
+			grid-row: 1 / span 2;
+		}
+
+		&:nth-of-type(2) {
+			grid-column: 2 / span 2;
+		}
+
+		&:nth-of-type(3) {
+			grid-row: 2 / span 1;
+		}
+
+		&:nth-of-type(4) {
+			grid-row: 2 / span 2;
+		}
+
+		&:nth-of-type(5) {
+			grid-column: 1 / span 2;
+			grid-row: 3 / span 2;
+		}
+
+		&:nth-of-type(6) {
+			grid-row: 4 / span 1;
+		}
+	}
+}
+
+main.content:hover {
+	opacity: 1.0;
+	filter: grayscale(0%);
+
+	> section {
+		opacity: 0.5;
+		filter: grayscale(100%);
+		transition-property: opacity, filter;
+		transition-duration: 300ms;
+		transition-timing-function: ease-out;
+
+		&:hover {
+			opacity: 1.0;
+			filter: grayscale(0%);
+		}
+	}
+}

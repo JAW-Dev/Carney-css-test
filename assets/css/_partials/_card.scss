@@ -1,0 +1,84 @@
+.card {
+	position: relative;
+	overflow: hidden;
+	min-height: 0;
+	padding-bottom: 100%;
+	margin-bottom: rem(30);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@include media('desktop') {
+		padding-bottom: 0%;
+		margin-bottom: 0;
+	}
+
+	a,
+	&__header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	a {
+		z-index: 3;
+		height: 100%;
+	}
+
+	&__header {
+		padding: rem(24);
+		margin: 0;
+		z-index: 2;
+	}
+
+	&__title {
+		@extend .semi-bold;
+
+		font-size: rem(28);
+		line-height: rem(40);
+	}
+
+	&__sub-title {
+		@extend .regular;
+
+		font-size: rem(18);
+		line-height: rem(28);
+	}
+
+	&:first-child {
+		header {
+			padding: rem(32);
+		}
+	}
+
+	&__1,
+	&__2,
+	&__3,
+	&__4,
+	&__5,
+	&__6 {
+		background-size: cover;
+		background-position: center center;
+	}
+
+	&__1 {
+		background-image: url("../images/1.png");
+	}
+	&__2 {
+		background-image: url("../images/2.png");
+	}
+	&__3 {
+		background-image: url("../images/3.jpeg");
+	}
+	&__4 {
+		background-image: url("../images/4.jpeg");
+	}
+	&__5 {
+		background-image: url("../images/5.jpeg");
+	}
+	&__6 {
+		background-image: url("../images/6.png");
+	}
+}

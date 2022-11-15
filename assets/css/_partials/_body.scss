@@ -1,0 +1,12 @@
+body {
+	display: flex;
+	justify-content: center;
+	font-family: 'Inter', sans-serif;
+	color: #18191F;
+	padding: 0;
+
+	@include media('desktop') {
+		padding: rem(80) rem(8);
+	}
+}
+
