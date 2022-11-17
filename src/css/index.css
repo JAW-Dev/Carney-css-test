@@ -538,12 +538,12 @@ body {
   place-items: center;
   font-family: 'Inter', sans-serif;
   color: #18191F;
-  padding: 0; }
+  padding: 5rem 0.9375rem 0.9375rem; }
   body a {
     color: #18191F; }
   @media (min-width: 992px) {
     body {
-      padding: 5rem 0.5rem; } }
+      padding: 5rem 0.9375rem 0.5rem; } }
 
 .bold, header h1 {
   font-weight: 800; }
@@ -555,12 +555,9 @@ body {
   font-weight: 500; }
 
 .content-wrap {
-  max-width: 45.625rem;
+  max-width: 69.375rem;
   width: 100%;
   background-color: white; }
-  @media (min-width: 992px) {
-    .content-wrap {
-      max-width: 69.375rem; } }
 
 main.content {
   display: block;

@@ -1,11 +1,7 @@
 .content-wrap {
-	max-width: rem(730);
+	max-width: rem(1110);;
 	width: 100%;
 	background-color: white;
-
-	@include media('desktop') {
-		max-width: rem(1110);
-	}
 }
 
 main.content {

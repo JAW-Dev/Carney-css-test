@@ -3,14 +3,14 @@ body {
 	place-items: center;
 	font-family: 'Inter', sans-serif;
 	color: #18191F;
-	padding: 0;
+	padding: rem(80) rem(15) rem(15);
 
 	a {
 		color: #18191F;
 	}
 
 	@include media('desktop') {
-		padding: rem(80) rem(8);
+		padding: rem(80) rem(15) rem(8);
 	}
 }
 
