@@ -534,8 +534,8 @@ template {
  * ==========================================================================
  */
 body {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   font-family: 'Inter', sans-serif;
   color: #18191F;
   padding: 0; }
@@ -555,9 +555,12 @@ body {
   font-weight: 500; }
 
 .content-wrap {
-  max-width: 69.375rem;
+  max-width: 45.625rem;
   width: 100%;
   background-color: white; }
+  @media (min-width: 992px) {
+    .content-wrap {
+      max-width: 69.375rem; } }
 
 main.content {
   display: block;
